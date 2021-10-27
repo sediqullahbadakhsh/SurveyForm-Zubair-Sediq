@@ -1,0 +1,84 @@
+:root {
+    --main-color: rgb(160, 235, 160);
+}
+
+body {
+    background: var(--main-color);
+}
+
+h1#title,
+p#description {
+    text-align: center;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(245, 245, 245);
+    border-radius: 25px;
+    padding: 3%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px 10px;
+    align-items: baseline;
+}
+
+form label {
+    letter-spacing: 2px;
+}
+
+form label,
+p {
+    text-align: right;
+}
+
+.label-radio {
+    letter-spacing: 1px;
+}
+
+form input,
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border-style: inset;
+    border-width: 1px;
+    outline-style: none;
+}
+
+#comments {
+    height: 100px;
+}
+
+button {
+    justify-self: center;
+    grid-column: 1 / -1;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1em;
+}
+
+.shadow {
+    -moz-box-shadow: 2px 2px 3px 3px #ccc;
+    -webkit-box-shadow: 2px 2px 3px 3px #ccc;
+    box-shadow: 2px 2px 3px 3px #ccc;
+}
+
+form input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    box-shadow: 0 0 3pt 2pt var(--main-color);
+}
+
+button:active {
+    transform: translateY(2px) translateX(2px);
+    -moz-box-shadow: 0px 0px 1px 1px #ccc;
+    -webkit-box-shadow: 0px 0px 1px 1px #ccc;
+    box-shadow: 0px 0px 1px 1px #ccc;
+}

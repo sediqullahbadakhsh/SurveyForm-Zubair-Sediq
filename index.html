@@ -1,17 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 </head>
 
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Survey</h1>
+    <p id="description">This is a survey</p>
+    <form id="survey-form" action="" method="post">
+        <!-- <div class="wrapper"> -->
+        <label id="name-label" for="name">*Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter you name" required />
+        <label id="email-label" for="email">*Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter a valid email address" required />
+        <label id="number-label" for="number">*Age:</label>
+        <input type="number" name="number" id="number" placeholder="Age" min="1" max="125" required />
+        <p>Which option best describes your current role?</p>
+        <!-- Option from a Dropdown -->
+        <select name="some_name" id="dropdown">
+					<option value="" selected>Select an option</option>
+					<option value="student">Student</option>
+					<option value="job">Full Time Job</option>
+					<option value="learner">Full Time Learner</option>
+					<option value="prefer">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+        <p>How likely would it be for you to recommend our service to a friend?</p>
+        <div class="radio-container">
+            <!-- Group of radio buttons -->
+            <div class="radio-element">
+                <input type="radio" value="attribute" name="attribute" id="definitely" />
+                <label class="label-radio" for="definitely"> Definitely</label>
+            </div>
+            <div class="radio-element">
+                <input type="radio" value="attribute" name="attribute" id="maybe" />
+                <label class="label-radio" for="maybe"> Maybe</label>
+            </div>
+            <div class="radio-element">
+                <input type="radio" value="attribute" name="attribute" id="not" />
+                <label class="label-radio" for="not"> Not Sure</label>
+            </div>
+        </div>
+        <!-- Series of checkboxes -->
+        <p>This is a question?</p>
+        <div class="checkbox-container">
+            <div class="checkbox-element">
+                <input type="checkbox" value="attribute" id="answer1" />
+                <label for="answer1">Answer1</label>
+            </div>
+            <div class="checkbox-element">
+                <input type="checkbox" value="attribute" id="answer1" />
+                <label for="answer1">Answer1</label>
+            </div>
+            <div class="checkbox-element">
+                <input type="checkbox" value="attribute" id="answer1" />
+                <label for="answer1">Answer1</label>
+            </div>
+            <div class="checkbox-element">
+                <input type="checkbox" value="attribute" id="answer1" />
+                <label for="answer1">Answer1</label>
+            </div>
+        </div>
+        <!-- Textarea for additional comments -->
+        <p>Additional Comments</p>
+        <textarea name="comments" id="comments"></textarea>
+        <!-- </div> -->
+        <button class="shadow" type="submit" id="submit">Submit</button>
+    </form>
 
-    <h1>Hello World</h1>
-    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
